@@ -82,8 +82,7 @@ class ManagedIdentitiesServiceClientMeta(type):
 
 
 class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMeta):
-    """
-    API Overview
+    """API Overview
 
     The ``managedidentites.googleapis.com`` service implements the
     Google Cloud Managed Identites API for identity services (e.g.
@@ -1339,7 +1338,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 try:
     DEFAULT_CLIENT_INFO = gapic_v1.client_info.ClientInfo(
         gapic_version=pkg_resources.get_distribution(
-            "google-cloud-managed-identities",
+            "google-cloud-managedidentities",
         ).version,
     )
 except pkg_resources.DistributionNotFound:
