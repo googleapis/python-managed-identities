@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 # Copyright 2020 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,9 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 import warnings
-from typing import Awaitable, Callable, Dict, Optional, Sequence, Tuple
+from typing import Awaitable, Callable, Dict, Optional, Sequence, Tuple, Union
 
 from google.api_core import gapic_v1  # type: ignore
 from google.api_core import grpc_helpers_async  # type: ignore
@@ -24,6 +22,7 @@ from google.api_core import operations_v1  # type: ignore
 from google import auth  # type: ignore
 from google.auth import credentials  # type: ignore
 from google.auth.transport.grpc import SslCredentials  # type: ignore
+import packaging.version
 
 import grpc  # type: ignore
 from grpc.experimental import aio  # type: ignore
@@ -31,7 +30,6 @@ from grpc.experimental import aio  # type: ignore
 from google.cloud.managedidentities_v1.types import managed_identities_service
 from google.cloud.managedidentities_v1.types import resource
 from google.longrunning import operations_pb2 as operations  # type: ignore
-
 from .base import ManagedIdentitiesServiceTransport, DEFAULT_CLIENT_INFO
 from .grpc import ManagedIdentitiesServiceGrpcTransport
 
@@ -117,13 +115,15 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
         Returns:
             aio.Channel: A gRPC AsyncIO channel object.
         """
-        scopes = scopes or cls.AUTH_SCOPES
+
+        self_signed_jwt_kwargs = cls._get_self_signed_jwt_kwargs(host, scopes)
+
         return grpc_helpers_async.create_channel(
             host,
             credentials=credentials,
             credentials_file=credentials_file,
-            scopes=scopes,
             quota_project_id=quota_project_id,
+            **self_signed_jwt_kwargs,
             **kwargs,
         )
 
@@ -145,7 +145,8 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
         """Instantiate the transport.
 
         Args:
-            host (Optional[str]): The hostname to connect to.
+            host (Optional[str]):
+                 The hostname to connect to.
             credentials (Optional[google.auth.credentials.Credentials]): The
                 authorization credentials to attach to requests. These
                 credentials identify the application to the service; if none
@@ -204,7 +205,6 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
             # If a channel was explicitly provided, set it.
             self._grpc_channel = channel
             self._ssl_channel_credentials = None
-
         else:
             if api_mtls_endpoint:
                 host = api_mtls_endpoint
@@ -286,7 +286,9 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
         [managed_identities_service.CreateMicrosoftAdDomainRequest],
         Awaitable[operations.Operation],
     ]:
-        r"""Return a callable for the create microsoft ad domain method over gRPC.
+        r"""Return a callable for the
+        create microsoft ad domain
+          method over gRPC.
 
         Creates a Microsoft AD domain.
 
@@ -315,7 +317,9 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
         [managed_identities_service.ResetAdminPasswordRequest],
         Awaitable[managed_identities_service.ResetAdminPasswordResponse],
     ]:
-        r"""Return a callable for the reset admin password method over gRPC.
+        r"""Return a callable for the
+        reset admin password
+          method over gRPC.
 
         Resets a domain's administrator password.
 
@@ -344,7 +348,9 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
         [managed_identities_service.ListDomainsRequest],
         Awaitable[managed_identities_service.ListDomainsResponse],
     ]:
-        r"""Return a callable for the list domains method over gRPC.
+        r"""Return a callable for the
+        list domains
+          method over gRPC.
 
         Lists domains in a project.
 
@@ -372,7 +378,9 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
     ) -> Callable[
         [managed_identities_service.GetDomainRequest], Awaitable[resource.Domain]
     ]:
-        r"""Return a callable for the get domain method over gRPC.
+        r"""Return a callable for the
+        get domain
+          method over gRPC.
 
         Gets information about a domain.
 
@@ -401,7 +409,9 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
         [managed_identities_service.UpdateDomainRequest],
         Awaitable[operations.Operation],
     ]:
-        r"""Return a callable for the update domain method over gRPC.
+        r"""Return a callable for the
+        update domain
+          method over gRPC.
 
         Updates the metadata and configuration of a domain.
 
@@ -430,7 +440,9 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
         [managed_identities_service.DeleteDomainRequest],
         Awaitable[operations.Operation],
     ]:
-        r"""Return a callable for the delete domain method over gRPC.
+        r"""Return a callable for the
+        delete domain
+          method over gRPC.
 
         Deletes a domain.
 
@@ -458,7 +470,9 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
     ) -> Callable[
         [managed_identities_service.AttachTrustRequest], Awaitable[operations.Operation]
     ]:
-        r"""Return a callable for the attach trust method over gRPC.
+        r"""Return a callable for the
+        attach trust
+          method over gRPC.
 
         Adds an AD trust to a domain.
 
@@ -487,7 +501,9 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
         [managed_identities_service.ReconfigureTrustRequest],
         Awaitable[operations.Operation],
     ]:
-        r"""Return a callable for the reconfigure trust method over gRPC.
+        r"""Return a callable for the
+        reconfigure trust
+          method over gRPC.
 
         Updates the DNS conditional forwarder.
 
@@ -515,7 +531,9 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
     ) -> Callable[
         [managed_identities_service.DetachTrustRequest], Awaitable[operations.Operation]
     ]:
-        r"""Return a callable for the detach trust method over gRPC.
+        r"""Return a callable for the
+        detach trust
+          method over gRPC.
 
         Removes an AD trust.
 
@@ -544,7 +562,9 @@ class ManagedIdentitiesServiceGrpcAsyncIOTransport(ManagedIdentitiesServiceTrans
         [managed_identities_service.ValidateTrustRequest],
         Awaitable[operations.Operation],
     ]:
-        r"""Return a callable for the validate trust method over gRPC.
+        r"""Return a callable for the
+        validate trust
+          method over gRPC.
 
         Validates a trust state, that the target domain is
         reachable, and that the target domain is able to accept
