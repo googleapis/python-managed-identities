@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/googleapis/python-managed-identities/compare/v1.0.0...v1.0.1) (2021-06-22)
+
+
+### Documentation
+
+* omit mention of Python 2.7 in 'CONTRIBUTING.rst' ([#1127](https://www.github.com/googleapis/python-managed-identities/issues/1127)) ([#39](https://www.github.com/googleapis/python-managed-identities/issues/39)) ([4c82d41](https://www.github.com/googleapis/python-managed-identities/commit/4c82d419bd18f6361d9ebc134dc3c7cebf473cac))
+
 ## [1.0.0](https://www.github.com/googleapis/python-managed-identities/compare/v0.2.0...v1.0.0) (2021-06-16)
 
 
