@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://www.github.com/googleapis/python-managed-identities/compare/v1.1.0...v1.1.1) (2021-07-20)
+
+
+### Bug Fixes
+
+* **deps:** pin 'google-{api,cloud}-core', 'google-auth' to allow 2.x versions ([#51](https://www.github.com/googleapis/python-managed-identities/issues/51)) ([43e3ce1](https://www.github.com/googleapis/python-managed-identities/commit/43e3ce1df7c59f9d33d1afeb4e440ae8103dfb4b))
+
 ## [1.1.0](https://www.github.com/googleapis/python-managed-identities/compare/v1.0.0...v1.1.0) (2021-07-01)
 
 
