@@ -3,15 +3,15 @@
 ### [1.1.1](https://www.github.com/googleapis/python-managed-identities/compare/v1.1.0...v1.1.1) (2021-07-26)
 
 
-### Features
-
-* add Samples section to CONTRIBUTING.rst ([#52](https://www.github.com/googleapis/python-managed-identities/issues/52)) ([a3e352c](https://www.github.com/googleapis/python-managed-identities/commit/a3e352c80a3e2984d0c767ec32d08e1524a69949))
-
-
 ### Bug Fixes
 
 * **deps:** pin 'google-{api,cloud}-core', 'google-auth' to allow 2.x versions ([#51](https://www.github.com/googleapis/python-managed-identities/issues/51)) ([43e3ce1](https://www.github.com/googleapis/python-managed-identities/commit/43e3ce1df7c59f9d33d1afeb4e440ae8103dfb4b))
 * enable self signed jwt for grpc ([#57](https://www.github.com/googleapis/python-managed-identities/issues/57)) ([d79eaa7](https://www.github.com/googleapis/python-managed-identities/commit/d79eaa732ea33f601cb5f9a37b2f788e6f3fd9f2))
+
+
+### Documentation
+
+* add Samples section to CONTRIBUTING.rst ([#52](https://www.github.com/googleapis/python-managed-identities/issues/52)) ([a3e352c](https://www.github.com/googleapis/python-managed-identities/commit/a3e352c80a3e2984d0c767ec32d08e1524a69949))
 
 
 ### Miscellaneous Chores
