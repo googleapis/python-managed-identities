@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.1](https://github.com/googleapis/python-managed-identities/compare/v0.2.0...v0.2.1) (2022-04-04)
+
+
+### Bug Fixes
+
+* **deps:** require google-api-core >= 1.31.5, >= 2.3.2 on v0 release ([#123](https://github.com/googleapis/python-managed-identities/issues/123)) ([804d1b5](https://github.com/googleapis/python-managed-identities/commit/804d1b5bdf97d59d92e98b58aa5a7a281c5fae89))
+
 ## [0.2.0](https://www.github.com/googleapis/python-managed-identities/compare/v0.1.0...v0.2.0) (2021-05-16)
 
 
