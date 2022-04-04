@@ -25,7 +25,7 @@ description = "Managed Service for Microsoft Active Directory API client library
 release_status = "Development Status :: 4 - Beta"
 url = "https://github.com/googleapis/python-managed-identities"
 dependencies = [
-    "google-api-core[grpc] >= 1.22.2, < 2.0.0dev",
+    "google-api-core[grpc] >= 1.31.5, <3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0",
     "libcst >= 0.2.5",
     "proto-plus >= 1.4.0",
     "packaging >= 14.3",
