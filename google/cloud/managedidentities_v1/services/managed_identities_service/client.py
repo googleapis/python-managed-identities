@@ -16,7 +16,7 @@
 from collections import OrderedDict
 import os
 import re
-from typing import Dict, Optional, Sequence, Tuple, Type, Union
+from typing import Dict, Mapping, Optional, Sequence, Tuple, Type, Union
 import pkg_resources
 
 from google.api_core import client_options as client_options_lib
@@ -484,7 +484,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 
         .. code-block:: python
 
-            from google.cloud import managedidentities_v1
+                    from google.cloud import managedidentities_v1
 
             def sample_create_microsoft_ad_domain():
                 # Create a client
@@ -637,7 +637,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 
         .. code-block:: python
 
-            from google.cloud import managedidentities_v1
+                    from google.cloud import managedidentities_v1
 
             def sample_reset_admin_password():
                 # Create a client
@@ -734,7 +734,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 
         .. code-block:: python
 
-            from google.cloud import managedidentities_v1
+                    from google.cloud import managedidentities_v1
 
             def sample_list_domains():
                 # Create a client
@@ -842,7 +842,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 
         .. code-block:: python
 
-            from google.cloud import managedidentities_v1
+                    from google.cloud import managedidentities_v1
 
             def sample_get_domain():
                 # Create a client
@@ -938,7 +938,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 
         .. code-block:: python
 
-            from google.cloud import managedidentities_v1
+                    from google.cloud import managedidentities_v1
 
             def sample_update_domain():
                 # Create a client
@@ -1070,7 +1070,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 
         .. code-block:: python
 
-            from google.cloud import managedidentities_v1
+                    from google.cloud import managedidentities_v1
 
             def sample_delete_domain():
                 # Create a client
@@ -1191,7 +1191,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 
         .. code-block:: python
 
-            from google.cloud import managedidentities_v1
+                    from google.cloud import managedidentities_v1
 
             def sample_attach_trust():
                 # Create a client
@@ -1319,7 +1319,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 
         .. code-block:: python
 
-            from google.cloud import managedidentities_v1
+                    from google.cloud import managedidentities_v1
 
             def sample_reconfigure_trust():
                 # Create a client
@@ -1453,7 +1453,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 
         .. code-block:: python
 
-            from google.cloud import managedidentities_v1
+                    from google.cloud import managedidentities_v1
 
             def sample_detach_trust():
                 # Create a client
@@ -1585,7 +1585,7 @@ class ManagedIdentitiesServiceClient(metaclass=ManagedIdentitiesServiceClientMet
 
         .. code-block:: python
 
-            from google.cloud import managedidentities_v1
+                    from google.cloud import managedidentities_v1
 
             def sample_validate_trust():
                 # Create a client
