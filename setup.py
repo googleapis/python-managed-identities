@@ -26,9 +26,10 @@ release_status = "Development Status :: 4 - Beta"
 url = "https://github.com/googleapis/python-managed-identities"
 dependencies = [
     "google-api-core[grpc] >= 1.31.5, <3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0",
-    "libcst >= 0.2.5",
-    "proto-plus >= 1.4.0",
-    "packaging >= 14.3",
+    "libcst >= 0.2.5, <1.0.0dev",
+    "proto-plus >= 1.4.0, <2.0.0dev",
+    "packaging >= 14.3, <22.0.0dev",
+    "protobuf<4.0.0dev",
 ]
 
 package_root = os.path.abspath(os.path.dirname(__file__))
