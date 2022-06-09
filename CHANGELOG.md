@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/googleapis/python-managed-identities/compare/v0.2.1...v0.2.2) (2022-06-08)
+
+
+### Bug Fixes
+
+* **deps:** require protobuf<4.0.0 on v0 branch ([#150](https://github.com/googleapis/python-managed-identities/issues/150)) ([5d2cc80](https://github.com/googleapis/python-managed-identities/commit/5d2cc805a6bcd5011945158b35f4552469f0b7d6))
+
 ### [0.2.1](https://github.com/googleapis/python-managed-identities/compare/v0.2.0...v0.2.1) (2022-04-04)
 
 
