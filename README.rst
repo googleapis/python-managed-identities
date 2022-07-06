@@ -3,7 +3,7 @@ Python Client for Managed Service for Microsoft Active Directory API
 
 |stable| |pypi| |versions|
 
-`Managed Service for Microsoft Active Directory API`_: 
+`Managed Service for Microsoft Active Directory API`_: is a highly available, hardened Google Cloud service running actual Microsoft AD that enables you to manage authentication and authorization for your AD-dependent workloads, automate AD server maintenance and security configuration, and connect your on-premises AD domain to the cloud.
 
 - `Client Library Documentation`_
 - `Product Documentation`_
