@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.6.0](https://github.com/googleapis/python-managed-identities/compare/v1.5.4...v1.6.0) (2022-11-26)
+
+
+### Features
+
+* add support for `google.cloud.managedidentities.__version__` ([66d589f](https://github.com/googleapis/python-managed-identities/commit/66d589f08b034a39250d8c6076a93ae0bb8e63b9))
+* Add typing to proto.Message based class attributes ([66d589f](https://github.com/googleapis/python-managed-identities/commit/66d589f08b034a39250d8c6076a93ae0bb8e63b9))
+
+
+### Bug Fixes
+
+* Add dict typing for client_options ([66d589f](https://github.com/googleapis/python-managed-identities/commit/66d589f08b034a39250d8c6076a93ae0bb8e63b9))
+* **deps:** require google-api-core &gt;=1.33.2 ([66d589f](https://github.com/googleapis/python-managed-identities/commit/66d589f08b034a39250d8c6076a93ae0bb8e63b9))
+
+
+### Documentation
+
+* **samples:** Snippetgen handling of repeated enum field ([66d589f](https://github.com/googleapis/python-managed-identities/commit/66d589f08b034a39250d8c6076a93ae0bb8e63b9))
+
 ## [1.5.4](https://github.com/googleapis/python-managed-identities/compare/v1.5.3...v1.5.4) (2022-10-07)
 
 
